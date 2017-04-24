@@ -4,10 +4,8 @@ var chalk = require('chalk');
 
 module.exports = {
     pwd: function(actualArgs) {
-        
-            process.stdout.write(chalk.green('Current directory: ' + process.cwd()));
-            process.stdout.write('\nprompt > ');
-    
+        process.stdout.write(chalk.green('Current directory: ' + process.cwd()));
+        process.stdout.write('\nprompt > ');
     },
     date: function(actualArgs) {
         process.stdout.write(chalk.green('Current date & time: ' + new Date()));
